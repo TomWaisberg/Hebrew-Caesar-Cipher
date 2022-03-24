@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="app.js"></script>
+<script>
+    function show_encoded(){
+        document.getElementById("encoded").innerText = encode_string(document.getElementById("text_to_encode").value, parseInt(document.getElementById("shiftnumencode").value));
+    }
+    function show_decoded(){
+        document.getElementById("decoded").innerText = decode_string(document.getElementById("text_to_decode").value, parseInt(document.getElementById("shiftnumdecode").value));
+    }
+</script>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <title>צופן קיסר בעברית</title>
+    <h1>צופן קיסר בעברית</h1>
+
+    <div class="center" name="encoding">
+        <h2>הכנס טקסט להצפנה ומפתח</h2>
+        <input type="text" id="text_to_encode">
+        <input type="number" id="shiftnumencode" min="1" max="22" value="1">
+        <input type="button" value="Encode" onclick="show_encoded()">
+        <p id="encoded"></p>
+
+        <h2>הכנס טקסת לפיצוח ומפתח</h2>
+        <input type="text" id="text_to_decode">
+        <input type="number" id="shiftnumdecode" min="1" max="22" value="1">
+        <input type="button" value="Decode" onclick="show_decoded()">
+        <p id="decoded"></p>
+    </div>
+</body>

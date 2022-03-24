@@ -1,0 +1,36 @@
+body{
+    background-color:burlywood;
+}
+.center {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .button {
+    background-color: #1b1b1b;
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+  }
+  p{
+    color: #1b1b1b;
+    font-size: 24px;
+  }
+  h1{
+    color: #1b1b1b;
+    text-align: center;
+    padding: 25px;
+  }
+
+  h2{
+    color: #1b1b1b;
+    text-align: center;
+  }
